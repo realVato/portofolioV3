@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #000;
+}
+/* JS */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+}
+
+.show {
+    display: block !important;
+    opacity: 1;
+}
+
+.hide-on-large {
+    display: none;
+}
+/* Typography */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #999;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    margin-left: 0.3rem;
+    color: #fff;
+}
+
+/* Utilities */
+.underline {
+    text-decoration: underline;
+}
+
+.inline {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+/* Showcase */
+.showcase {
+    height: 100vh;
+    background: url('/Netflix/img/showcase.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: inset 0px 0px 200px 120px rgba(0, 0, 0, 0.88);
+    z-index: 1;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+}
+
+.showcase-top .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-top .signin {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-top .signin a {
+    padding: 0.6rem 1.4rem;
+    background-color: red;
+    border-radius: 0.4rem;
+}
+
+.showcase-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-content h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.showcase-content .btn-main-showcase {
+    background-color: red;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    border-radius: 0.4rem;
+}
+
+/* Grid-Tab */
+.grid-tab {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: hidden;
+}
+
+.grid-tab .tab-item {
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.grid-tab .show-border {
+    border-bottom: 5px solid red;
+}
+
+.grid-tab .tab-item i {
+    margin-bottom: 1rem;
+    color: #999;
+}
+
+.grid-tab .tab-item p {
+    color: #999;
+}
+
+.grid-tab .tab-item:hover i,
+.grid-tab .tab-item:hover p {
+    color: #fff;
+}
+
+/* Grid-tab content */
+.grid-tab-content {
+    width: 70%;
+    margin: 3rem auto 7vh auto;
+    overflow-x: hidden;
+}
+/* TAB1 */
+.grid-tab-content .flex {
+    display: flex;
+}
+
+.grid-tab-content .tab1-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.grid-tab-content .tab1-content p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.grid-tab-content .tab1-content a {
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: red;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.4rem;
+    margin-top: 1.2rem;
+}
+/* TAB2 */
+.grid-tab-content .tab2-content .inline p {
+    font-size: 2rem;
+}
+
+.grid-tab-content .tab2-content a {
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.4rem;
+    margin: auto;
+}
+
+.grid-tab-content .tab2-content .tab2-content-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.grid-tab-content .tab2-content .tab2-content-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.grid-tab-content .tab2-content .tab2-content-description p {
+    color: #999;
+}
+
+.grid-tab-content .tab2-content .tab2-content-description .tab2-content-text .highlight {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* TAB3 */
+.grid-tab-content .tab3-content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.grid-tab-content .tab3-content p {
+    font-size: 2rem;
+}
+
+.grid-tab-content .tab3-content a {
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.4rem;
+    margin: auto;
+} 
+
+.table {
+    color: #999;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.table i {
+    color: #999;
+}
+
+.table thead {
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #222;
+}
+
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table td {
+    padding: 0.4rem;
+}
+
+/* Footer grid */
+.faq {
+    width: 50%;
+    margin: 5vh auto 5vh auto;
+    border-top: 2px solid red;
+    padding-top: 2rem;
+}
+
+.faq span {
+    font-size: 1.1rem;
+}
+
+.faq .grid-4-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    line-height: 2;
+    margin: 1.2rem 0;
+}
+
+.faq span,
+.faq p {
+    color: #999;
+}
+/* Footer copyright */
+.copyright {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .github:hover {
+    text-decoration: underline;
+    color: rgb(87, 85, 85);
+  }
+
+  /* Media Query */
+  @media (max-width: 800px) {
+    .hide-on-small {
+        display: none !important;
+    }
+
+    .show-on-small {
+        display: block;
+    }
+
+    /* Showcase */
+    .showcase-top .logo {
+        top: 30%;
+        left: 5%;
+        width: 100px;
+        transform: translate(0);
+    }
+
+    .showcase-top .signin {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        z-index: 2;
+        transform: translate(0);
+    }
+
+    .showcase::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.88);
+        z-index: 1;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .showcase-content h3 {
+        display: none;
+    }
+
+    .showcase-content .btn-main-showcase {
+        width: 100%;
+    }
+    /* Grid-tab */
+    .grid-tab {
+        width: 100%;
+    }
+    /* Grid-tab contentt */
+    .grid-tab-content {
+        width: 90%;
+        margin: 3rem auto 7vh auto;
+    }
+    /* TAB1 */
+    .grid-tab-content .flex {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .grid-tab-content .tab1-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-tab-content .tab1-content a {
+        width: 100%;
+    }
+    /* TAB2 */
+    .inline {
+        display: block;
+    }
+
+    .grid-tab-content .tab2-content .inline p {
+        font-size: 1.5rem;
+    }
+
+    .grid-tab-content .tab2-content .inline a {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .grid-tab-content .tab2-content .tab2-content-items {
+        grid-template-columns: 1fr;
+    }
+    /* TAB3 */
+    .grid-tab-content .tab3-content a {
+        display: block;
+        margin-top: 2rem;
+    } 
+
+    /* Footer grid */
+    .faq {
+        text-align: center;
+    }
+
+    .table tbody tr td:first-child {
+        text-align: center;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        display: none;
+    }
+    
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        border-bottom: 1px solid #eee;
+        position: relative;
+        margin-left: 150px;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 150px;
+        margin-left: -150px;
+    }
+
+    td:nth-of-type(2):before {
+        content: 'Paprastas';
+        color: #fff;
+    }
+    td:nth-of-type(3):before {
+        content: 'Standartinis';
+        color: #fff;
+    }
+    td:nth-of-type(4):before {
+        content: 'Premiumas';
+        color: #fff;
+    }
+}
+
+@media (max-width: 350px) {
+    .grid-tab {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-height: 500px) {
+    .hide-on-small {
+        display: none !important;
+    }
+
+    .show-on-small {
+        display: block;
+    }
+
+    /* Showcase */
+    .showcase-top .logo {
+        top: 30%;
+        left: 5%;
+        width: 100px;
+        transform: translate(0);
+    }
+
+    .showcase-top .signin {
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        z-index: 2;
+        transform: translate(0);
+    }
+
+    .showcase::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.88);
+        z-index: 1;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .showcase-content h3 {
+        display: none;
+    }
+
+    .showcase-content .btn-main-showcase {
+        width: 100%;
+    }
+    /* Grid-tab */
+    .grid-tab {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    /* Grid-tab contentt */
+    .grid-tab-content {
+        width: 90%;
+        margin: 3rem auto 7vh auto;
+    }
+    /* TAB1 */
+    .grid-tab-content .flex {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .grid-tab-content .tab1-content {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-tab-content .tab1-content a {
+        width: 100%;
+    }
+    /* TAB2 */
+    .inline {
+        display: block;
+    }
+
+    .grid-tab-content .tab2-content .inline p {
+        font-size: 1.5rem;
+    }
+
+    .grid-tab-content .tab2-content .inline a {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .grid-tab-content .tab2-content .tab2-content-items {
+        grid-template-columns: 1fr;
+    }
+    /* TAB3 */
+    .grid-tab-content .tab3-content a {
+        display: block;
+        margin-top: 2rem;
+    } 
+
+    /* Footer grid */
+    .faq {
+        text-align: center;
+    }
+}

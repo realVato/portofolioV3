@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Typography */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(192, 58, 163);
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+ }
+
+/* Navbar */
+.navbar {
+    /* Background & Height in JS */
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    z-index: 99;
+    transition: .6s;
+}
+
+/* Video showcase */
+.video {
+    position: relative;
+    height: 100vh;
+}
+
+.video-showcase {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(42, 43, 44);
+    opacity: 0.8;
+}
+
+.video-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 1rem;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+}
+
+.video-text .transition-btn {
+    margin-top: 50px;
+}
+
+/* Gallery showcase */
+.gallery-showcase {
+    margin: 5px;
+    overflow-x: hidden;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 5px;
+}
+
+.row div {
+    height: 40vh;
+    padding: 15px;
+} 
+
+.row.row-one div:nth-child(2),
+.row.row-two div:nth-child(1),
+.row.row-two div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+.row.row-one div:nth-child(2):hover,
+.row.row-two div:nth-child(1):hover,
+.row.row-two div:nth-child(3):hover {
+    background-color: rgb(186, 60, 202);
+    font-size: 1.03rem;
+}
+
+/* Gallery images */
+.row.row-one div:nth-child(1) {
+    background: url('../img/architecture-art-colorful-161154.jpg') no-repeat center/cover;
+    transition: .6s;
+}
+
+.row.row-one div:nth-child(3) {
+    background: url('../img/art-art-materials-artwork-1053687.jpg') no-repeat center/cover;
+    transition: .6s;
+}
+
+.row.row-two div:nth-child(2) {
+    background: url('../img/art-black-and-white-blur-39348.jpg') no-repeat center/cover;
+    transition: .6s;
+}
+
+.row.row-three div {
+    background: url('../img/art-artsy-craft-220421.jpg') no-repeat center/cover;
+    transition: .6s;
+}
+
+.row.row-one div:nth-child(1):hover,
+.row.row-one div:nth-child(3):hover,
+.row.row-two div:nth-child(2):hover,
+.row.row-three div:hover {
+    border: 5px solid rgb(161, 34, 55);
+}
+
+/* Blur showcase */
+.blur-showcase {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-showcase::after {
+    content: '';
+    background: url('../img/art-calamity-dawn-1151261.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 25px;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: 1s;
+}
+
+.blur-showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    transition: 1s;
+}
+
+.blur-showcase .content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.blur-showcase .content p {
+    font-size: 1.5rem;
+    color: rgb(235, 0, 0);
+}
+
+.blur-showcase .content a {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    animation: colourful 10s infinite;
+    border-radius: 15px;
+}
+
+@keyframes colourful {
+    10% {background-color: #ffffcc}
+    20% {background-color: #ccff99}
+    30% {background-color: #99ffcc}
+    40% {background-color: #66ccff}
+    50% {background-color: #cc99ff}
+    60% {background-color: #ffcc66}
+    70% {background-color: #ff6600}
+    80% {background-color: #ff33cc}
+    90% {background-color: #0066ff}
+    100% {background-color: #00cc66}
+}
+
+/* Services */
+.services {
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.services .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    height: inherit;
+}
+
+.services .grid-3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 247, 247);
+    transition: .3s ease-in-out;
+    padding: 25px;
+}
+
+.services .grid-3 div:hover {
+    background-color: #fff;
+}
+
+/* Why Us */
+.why-us {
+    margin: 40px 0;
+}
+
+.why-us .why-us-header {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.why-us .why-us-header hr {
+    width: 20%;
+    margin: auto;
+}
+
+.why-us .row1 {
+    width: 50%;
+    margin: auto;
+}
+
+/* Contact us */
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 247, 247);
+    padding: 70px 30px;
+}
+
+/* Footer */
+.copyright {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  /* Media Query */
+  @media (max-width: 700px) {
+
+    /* Gallery showcase */
+    .row {
+        grid-template-columns: 1fr;
+    }
+  
+    /* Services */
+    .services .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .hide-on-small {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+  }
+
+  @media (max-height: 500px) {
+    /* Video-text */
+    .video-text {
+        margin-top: 35px;
+    }
+
+    .video-text .transition-btn {
+        margin-top: 15px;
+    }
+
+    /* Gallery showcase */
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Blur showcase */
+    .blur-showcase .content {
+        top: 20%;
+        }
+  
+    /* Services */
+    .services .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .hide-on-small {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+  }

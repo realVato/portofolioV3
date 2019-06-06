@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic');
+
+:root {
+    --main-container-color: #333; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin: 20px 30px;
+    color: #fff;
+}
+
+/* GLOBAL */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+i {
+    padding: 10px;
+}
+
+.showcase h1,
+#our-team .row h1,
+#services-showcase .container div:nth-child(1) h1,
+#contact .text h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.showcase a, .top-box a, .info div a{
+    background-color: #111;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    transition: 1s;
+    border-radius: 3px;  
+}
+
+.showcase a:hover, .top-box a:hover, .info div a:hover{
+    background-color: rgb(155, 28, 28);
+}
+
+.top-box:hover,
+ .services div:hover,
+.info:hover, #our-team .staff div:hover,
+#services-link .row1 .div1:hover,
+#services-link .row2 .div2:hover,
+.contact-divs .row div:hover {
+    background-color: #555;
+}
+
+.top-box,
+.services div,
+.info, #our-team .staff div,
+#services-link .row1 .div1,
+#services-link .row2 .div2 {
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+}
+
+span.recommended {
+    font-size: 10px;
+    color: green;
+}
+
+li, .top-box, .showcase, .services div, .info, .portofolio div img {
+    -webkit-box-shadow: -1px 1px 17px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 17px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 17px -6px rgba(0,0,0,0.75);
+}
+
+/* </GLOBAL> */
+
+#navbar ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    background-color: var(--main-container-color);;
+    padding: 10px 0;
+    transition: 1s;
+}
+
+#navbar ul li:hover {
+    background-color: #555;
+}
+
+/* Home-showcase */
+.top-container {
+    display: grid;
+    margin: 20px 0;
+    grid-gap: 20px;
+    grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    grid-area: showcase;
+    background: url('../img/blogging-coding-copywriting-34140.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-container-color);;
+    padding: 0 15px 10px 15px;
+}
+
+.top-box a {
+    background-color: #111;
+    padding: 10px;
+    width: 80%;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+.top-box a:hover {
+    background-color: rgb(155, 28, 28);
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/* Home-Services */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services div {
+    background-color: var(--main-container-color);;
+    padding: 10px 10px;
+}
+
+/* Home-Info */
+.lower-container {
+    background-color: var(--main-container-color);;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.info .scope img {
+    margin: 10px 0 10px 10px;
+}
+
+/* Home-Portofolio */
+.portofolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-bottom: 20px;
+}
+
+/* About page */
+#our-team .row {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#our-team .row h1 {
+    color: #000;
+}
+
+#our-team hr {
+    width: 15%;
+}
+
+#our-team .staff {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+}
+
+#our-team .staff div {
+    background-color: var(--main-container-color);
+    margin-bottom: 20px;
+}
+
+#our-team .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    color: var(--main-container-color);
+    margin: 40px 0 60px 0;
+}
+
+#our-team .stats .stats-col {
+    display: flex;
+    justify-content: center;
+}
+
+#our-team .stats .stats-col i {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#our-team .stats .stats-col p {
+    margin: 5px;
+}
+
+#our-team .manager {
+    display: grid;
+    width: 80%;
+    margin: 30px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+#our-team .manager div:nth-child(2) {
+    display: flex;
+    margin: 0 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #333; 
+}
+
+#our-team .manager div:nth-child(2) blockquote {
+    background-color: rgb(252, 245, 245);
+    padding: 20px;
+    font-size: 1.4em;
+    margin: 50px auto;
+    font-family: Open-Sans;
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid var(--main-container-color) ;
+    line-height: 1.6;
+}
+
+/* Services-page */
+#services-link {
+    margin: 20px 0;
+}
+
+#services-link .row1, .row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+#services-link .row1 .div1, .row2 .div2 {
+    display: flex;
+    background-color: var(--main-container-color);
+    padding: 20px;
+    align-items: center;
+}
+
+#services-showcase {
+    background: url('../img/arachnid-close-up-cobweb-276347(1).jpg') no-repeat center center;
+    height: 600px;
+    padding: 50px 0;
+}
+
+#services-showcase .container {
+    width: 80%;
+    margin: auto;
+}
+
+#services-showcase .container div:nth-child(1) h1 {
+    margin-bottom: 30px;
+}
+
+#services-showcase .container div:nth-child(2) {
+    display: flex;
+    max-width: 400px;
+}
+
+#services-showcase .container div:nth-child(2) i {
+    margin-right: 10px;
+    transition: 1s;
+}
+
+#services-showcase .container div:nth-child(2) i:hover {
+    color: green;
+}
+
+#services-link .row1 .div1:nth-child(1), .row2 .div2:nth-child(1) {
+    text-align: right;
+}
+
+/* Contact page */
+#contact {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    margin: 20px 0;
+}
+
+#contact:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/adult-blur-business-2222383.jpg') no-repeat center/cover;
+    opacity: 0.5;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    margin: auto;
+}
+
+#contact .container .text {
+    color: var(--main-container-color);
+}
+
+.contact-divs .row {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-divs .row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-container-color);
+    height: 300px;
+}
+
+.contact-divs .row div .contact-us-btn {
+    background-color: rgb(155, 28, 28);
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-container-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Query */
+@media (max-width: 700px) {
+    /* HOME */
+    #navbar ul,
+    .services,
+    .info,
+    #our-team .staff,
+    #our-team .manager,
+    #services-link .row1, .row2,
+    .contact-divs .row {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase h1,
+    #our-team .row h1,
+    #services-showcase .container div:nth-child(1) h1,
+    #contact .text h1 {
+    font-size: 2rem;
+    }
+
+    .top-container {
+        grid-template-areas:
+        'showcase showcase'
+        'top-box-a top-box-b' 
+    }
+
+    .showcase a {
+        width: 50%;
+    }
+    /* ABOUT */
+    #our-team .stats {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    #our-team .manager {
+        width: 100%;
+    }
+
+    /* SERVICES */
+    #services-showcase .container div:nth-child(2) .hide-on-small {
+        display: none;
+    }
+
+    /* CONTACT */
+    #contact .container .text h1 {
+        line-height: 1;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+}
