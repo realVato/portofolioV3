@@ -55,8 +55,7 @@ nav ul li {
 
 /* INTRO */
 #intro {
-    background-color: #333e6d;
-    color: #fff;
+    background: linear-gradient(to bottom, rgb(9, 44, 87) 0%,rgb(7, 51, 88),rgb(34, 79, 114) 100%);    color: #fff;
     height: 95vh;
     display: flex;
     justify-content: center;
