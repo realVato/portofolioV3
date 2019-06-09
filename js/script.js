@@ -1,6 +1,6 @@
 $(function() {
 
-    var skills = ['HTML/CSS', 'SASS', 'jQuery', 'Wordpress'];
+    var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery', 'Wordpress'];
     var counter = 0;
     
     var skill = $('#skills');
