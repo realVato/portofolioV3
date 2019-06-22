@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
 }
 
@@ -27,7 +27,7 @@ a {
 .button:hover {
     background-color: rgb(158, 11, 109);
     border-color: #000;
-    color: #000;
+    color: #fff;
 }
 
 .main {
@@ -46,11 +46,11 @@ a {
 }
 
 .split.left {
-    background: url('../img/art-backlit-dark-556669\ \(1\).jpg') no-repeat center/cover;
+    background: url('../img/dark-design-graphic-1820770.jpg') no-repeat center/cover;
 }
 
 .split.right {
-    background: url('../img/apple-browser-creative-3080.jpg') no-repeat center/cover;
+    background: url('../img/contemporary-dark-data-669996.jpg') no-repeat center/cover;
 }
 
 /* Sliding */
@@ -63,6 +63,16 @@ a {
 }
 
 /* Media Query */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .left, .right {
+        padding: 0 2rem;
+    }
+}
+
 @media (max-width: 800px) {
     .main {
         display: grid;
@@ -71,10 +81,6 @@ a {
 
     .split {
         width: 100%;
-    }
-
-    h1 {
-        font-size: 2rem;
     }
 }
 

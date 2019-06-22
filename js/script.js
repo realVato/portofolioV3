@@ -1,4 +1,4 @@
-$(function() {
+(function() {
 
     var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery', 'Wordpress'];
     var counter = 0;
@@ -13,7 +13,7 @@ $(function() {
             counter = 0;
         }
     }, 800)
-});
+})();
 
 $('.about-me a').on('click', function(event) {
     if (this.hash !== '') {
