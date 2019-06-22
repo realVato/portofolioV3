@@ -45,6 +45,10 @@ a {
     transition: 1s ease-in-out;
 }
 
+.left, .right {
+    padding: 0 2rem;
+}
+
 .split.left {
     background: url('../img/dark-design-graphic-1820770.jpg') no-repeat center/cover;
 }
@@ -62,14 +66,15 @@ a {
     width: 25%;
 }
 
+.hover-left .right h1, .hover-right .left h1 {
+    font-size: 2.5rem;
+    transition: .8s;
+}
+
 /* Media Query */
 @media (max-width: 1000px) {
     h1 {
         font-size: 2.5rem;
-    }
-
-    .left, .right {
-        padding: 0 2rem;
     }
 }
 
