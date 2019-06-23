@@ -2,6 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden; 
 }
 
 /* GLOBAL */
@@ -14,7 +15,8 @@ a {
     color: #fff;
 }
 
-a:hover, #project a:hover {
+a:hover,
+#project a:hover {
     color: rgb(217, 16, 224);
 }
 
@@ -55,12 +57,23 @@ nav ul li {
 
 /* INTRO */
 #intro {
-    background: linear-gradient(to bottom, rgb(9, 44, 87) 0%,rgb(7, 51, 88),rgb(34, 79, 114) 100%);  
+    background: linear-gradient(to bottom, rgb(9, 44, 87) 0%, rgb(7, 51, 88), rgb(34, 79, 114) 100%);
     color: #fff;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 25px;
+}
+
+#intro::after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: inset 0px 0px 200px 120px rgba(0, 0, 0, 0.88);
 }
 
 #intro .wrapper {
@@ -74,6 +87,7 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    z-index: 2;
 }
 
 #intro .wrapper .container .skills {
@@ -83,6 +97,7 @@ nav ul li {
 #intro .wrapper .about-me {
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 #intro .wrapper .about-me i {
@@ -232,6 +247,7 @@ footer p {
 }
 
 @media (max-height: 600px) {
+
     /* PROJECT */
     #project .container .row {
         grid-template-columns: 1fr
