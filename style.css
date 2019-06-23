@@ -188,7 +188,7 @@ footer p {
 }
 
 /* Media Query */
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
     .hide-on-lg {
         display: block;
         margin-top: 1rem;
