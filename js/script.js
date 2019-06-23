@@ -33,7 +33,7 @@
   
   setInterval(function(){
     
-    background.style.backgroundImage = 'url(' + backgrounds[counter++] + ')';
+    background.style.background = 'url(' + backgrounds[counter++] + ') no-repeat center/cover';
 
     if (counter >= backgrounds.length){
         counter = 0;
