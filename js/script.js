@@ -1,26 +1,26 @@
 // Skills
 
-(function() {
+(function () {
 
-    var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery'];
-    var counter = 0;
-    
-    var skill = $('#skills');
+  var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery'];
+  var counter = 0;
 
-    setInterval(function(){
-        
-        skill.text(skills[counter++]);
-        
-        if (counter >= skills.length){
-            counter = 0;
-        }
-    }, 1000)
+  var skill = $('#skills');
+
+  setInterval(function () {
+
+    skill.text(skills[counter++]);
+
+    if (counter >= skills.length) {
+      counter = 0;
+    }
+  }, 1200)
 })();
 
 
-// Cover changes as skills do
+//Cover changes as skills do
 
-(function() {
+(function () {
 
   var backgrounds = [];
   backgrounds[0] = '../img/html.jpg';
@@ -30,36 +30,35 @@
   var counter = 0;
 
   var background = document.getElementById('intro');
-  
-  setInterval(function(){
-    
+
+  setInterval(function () {
+
     background.style.background = 'url(' + backgrounds[counter++] + ') no-repeat center/cover';
 
-    if (counter >= backgrounds.length){
-        counter = 0;
-  }
+    if (counter >= backgrounds.length) {
+      counter = 0;
+    }
 
-  }, 1000)
+  }, 1200)
+
 })();
-
 
 // Hover down
 
-$('.about-me a').on('click', function(event) {
+$('.about-me a').on('click', function (event) {
 
-    if (this.hash !== '') {
-      event.preventDefault();
-  
-      const hash = this.hash;
-  
-      $('html, body').animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        800,
-        function() {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      },
+      800,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  }
+});
