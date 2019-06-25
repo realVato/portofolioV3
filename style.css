@@ -72,8 +72,8 @@ nav ul li {
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    background-color: rgba(0, 0, 0, .8);
-    box-shadow: inset 0px 0px 200px 120px rgba(0, 0, 0, 0.88);
+    background-color: rgba(19, 18, 18, 0.8);
+    box-shadow: inset 0px 0px 200px 180px rgba(0, 0, 0, 0.88);
 }
 
 #intro .wrapper {
