@@ -2,7 +2,7 @@
 
 (function () {
 
-  var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery'];
+  var skills = ['HTML/CSS', 'SASS', 'JavaScript', 'jQuery', 'Webpack'];
   var counter = 0;
 
   var skill = $('#skills');
@@ -18,7 +18,7 @@
 })();
 
 
-//Cover changes as skills do
+// Cover changes as skills do
 
 (function () {
 
@@ -27,6 +27,7 @@
   backgrounds[1] = '../img/scss.jpg';
   backgrounds[2] = '../img/javascript.jpg';
   backgrounds[3] = '../img/jquery.jpg';
+  backgrounds[4] = '../img/webpack.jpg';
   var counter = 0;
 
   var background = document.getElementById('intro');
