@@ -57,59 +57,38 @@ nav ul li {
 
 /* INTRO */
 #intro {
-    background: linear-gradient(to bottom, rgb(9, 44, 87) 0%, rgb(7, 51, 88), rgb(34, 79, 114) 100%);
-    color: #fff;
+    color: #000;
     height: 100vh;
     display: flex;
-    justify-content: center;
 }
 
-#intro::after {
-    content: '';
+#intro .wrapper .me {
     position: absolute;
-    top: 55px;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+#intro .wrapper h1 {
+    position: relative;
+}
+
+#intro .wrapper .inline {
+    position: relative;
+    display: flex;
+}
+
+#intro .wrapper .inline #skills{
+    font-size: 1.05rem;
+}
+
+#intro .wrapper canvas {
+    height: 100%;
     width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    background-color: rgba(19, 18, 18, 0.8);
-    box-shadow: inset 0px 0px 200px 180px rgba(0, 0, 0, 0.88);
+    position: absolute;
+    z-index: 5;
 }
-
-#intro .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-}
-
-#intro .wrapper .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    z-index: 2;
-}
-
-#intro .wrapper .container .skills {
-    display: flex;
-}
-
-#intro .wrapper .about-me {
-    display: flex;
-    align-items: center;
-    z-index: 2;
-}
-
-#intro .wrapper .about-me i {
-    margin-left: 2rem;
-    cursor: pointer;
-}
-
-#intro .wrapper .about-me i:hover {
-    color: rgb(217, 16, 224);
-    transition: .3s;
-}
-
 /* PROJECT */
 #project {
     padding: 100px 0;
