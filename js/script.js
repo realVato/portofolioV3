@@ -3,7 +3,7 @@
 
 (() => {
 
-  const skills = ['HTML/CSS', 'SASS', 'JavaScript', 'Webpack'];
+  const skills = ['HTML/CSS', 'SASS', 'JavaScript', 'Webpack', 'InkScape'];
   let counter = 0;
 
   const skill = document.getElementById('skills');
@@ -15,7 +15,7 @@
   if (counter >= skills.length) {
       counter = 0;
     }
-  }, 1200)
+  }, 600)
  })();
 
 
@@ -94,9 +94,6 @@ SOFTWARE.
 'use strict';
 
 const canvas = document.getElementsByTagName('canvas')[0];
-const testingThisShit = document.getElementById('hi')
-
-console.log(canvas);
 
 resizeCanvas();
 
