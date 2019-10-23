@@ -70,8 +70,9 @@ nav ul li {
     z-index: 6;
 }
 
-#intro .wrapper h1 {
-    position: relative;
+#intro .wrapper h2 {
+    color: #333;
+    margin: 0;
 }
 
 #intro .wrapper .inline {
