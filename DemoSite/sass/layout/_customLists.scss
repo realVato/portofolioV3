@@ -1,0 +1,97 @@
+// CUSTOM LISTS
+.web-dev-lists-container {
+    display: flex;
+    background-color: $light-blue;
+    width: 100%;
+    margin-bottom: 3.5rem;
+    padding: 4rem;
+}
+
+.web-dev-description {
+    width: 30%;
+}
+
+.wireframe-list-container {
+    width: 70%;
+    margin-left: 4rem;
+}
+
+.wireframe {
+    padding-left: 4rem;
+}
+
+.custom-list {
+    display: flex;
+    background-color: $white;
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+
+    span {
+        color: $black;
+        font-weight: 900;
+    }
+
+    p {
+        color: $black;
+    }
+
+    .list {
+        width: 50%;
+        margin-right: 4rem;
+
+        .list-items {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            padding-top: 1rem;
+
+            li {
+                color: $black;
+                font-style: italic;
+            }
+
+            hr {
+                height: 1px;
+                width: 100%;
+                background-color: $black;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .list-description {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1013px) {
+    .web-dev-lists-container {
+        flex-direction: column;
+    }
+
+    .web-dev-description {
+        display: none;
+    }
+
+    .wireframe-list-container {
+        width: 100%;
+        margin: 2rem 0 0 0;
+
+        .wireframe {
+            padding: 0;
+        }
+
+        .custom-list {
+
+            .list {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 2rem;
+            }
+
+            .list-description {
+                display: none;
+            }
+        }
+    }
+}
