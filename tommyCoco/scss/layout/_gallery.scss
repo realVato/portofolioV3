@@ -1,0 +1,84 @@
+.gallery {
+    background-color: $dark-navy-blue;
+    text-align: center;
+    padding: 4rem 4rem;
+
+    a>img {
+        max-width: 1.2rem;
+    }
+
+    a:hover {
+        color: $white;
+    }
+}
+
+// photos
+.photo-gallery {
+    @include flexbox-row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3rem auto;
+
+    // Removes whitespace
+    .photo {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            display: block;
+            transition: transform 1s;
+        }
+
+        .ig-hover {
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            max-width: 60px;
+            z-index: 5;
+        }
+    }
+}
+
+// overlay for all photos in gallery
+.photo-overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $dark-navy-blue;
+    opacity: 0;
+}
+
+// photo darkens
+.photo:hover .photo-overlay:before {
+    opacity: .6;
+}
+
+// photo zooms in
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+// ig logo appears
+.photo:hover .ig-hover {
+    display: block;
+}
+
+// mQuery
+@media screen and (max-width: 1628px) {
+    .photo {
+        margin: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .gallery {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

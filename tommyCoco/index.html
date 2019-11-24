@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- MAIN STYLING -->
+    <link rel="stylesheet" href="/tommyCoco/css/main.css">
+    <!-- JS Navigation -->
+    <script defer src="/tommyCoco/scripts/navigation.js"></script>
+    <!-- Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/2ff57d8026.js"></script>
+    <!-- jQuery -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- SlickJS -->
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- JS Slider -->
+    <script defer src="/tommyCoco/scripts/slider.js"></script>
+    <!-- Smooth Scroling -->
+    <script defer src="/tommyCoco/scripts/smooth-scrolling.js"></script>
+    <title>Tommy Coco</title>
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Logo -->
+                <li>
+                    <a href="#" class="logo"><img src="/tommyCoco/icons tommy coco/tc-logo.svg"></a>
+                </li>
+                <!-- Nav list items / responsive nav-->
+                <div id="responsive-nav" class="responsive-nav">
+                    <!-- Dropdown -->
+                    <li class="dropdown">
+                        <a class="active" href="#">COLLECTIONS</a>
+                        <div class="dropdown-container">
+                            <div class="dropdown-content">
+                                <a href="#">Shkertik</a>
+                                <a href="#">Cool Brand</a>
+                                <a href="#">Another Very Cool Brand</a>
+                                <a href="#">Hipster Brand</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- // Dropdown -->
+                    <li>
+                        <a href="#">OUR STORY</a>
+                    </li>
+                    <li>
+                        <a href="#">INSPIRATION</a>
+                    </li>
+                    <li>
+                        <a href="#">GET IN TOUCH</a>
+                    </li>
+                </div>
+                <li>
+                    <!-- mQuery hamburger -->
+                    <li class="nav-toggle">
+                        <a href="#" id="nav-toggle-button"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <!-- Icons fixed at right -->
+                    <ul class="extra-nav">
+                        <li>
+                            <a href="#"><img src="/tommyCoco/icons tommy coco/tc-search.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/tommyCoco/icons tommy coco/tc-user.svg"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/tommyCoco/icons tommy coco/tc-cart.svg"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO GRID SHOWCASE -->
+    <section>
+        <div class="grid-container">
+            <!-- Hero container -->
+            <div class="hero-container">
+                <div class="hero-img"></div>
+                <div class="overlay"></div>
+                <div class="hero-wrapper">
+                    <i class="fas fa-tree"></i>
+                    <h1 class="bold">XMAS SPECIAL</h1>
+                    <h2>WINTER ACTION</h2>
+                </div>
+                <a class="btn-secondary-lg" href="#">SHOP NOW</a>
+                <div class="btn-scroll">
+                    <h4>SCROLL</h4>
+                    <a id="scroll-down" href="#pager-wrapper"><img class="btn-arrow scroll-down" src="/tommyCoco/icons tommy coco/tc-arr-down-white.svg"></a>
+                </div>
+            </div>
+            <!-- side boxes -->
+            <!-- side box A -->
+            <div class="side-box box-a">
+                <div class="box-a-img"></div>
+                <div class="overlay"></div>
+                <div class="wrapper">
+                    <h1 class="bold">SALE</h1>
+                    <h2 class="bold">UP TO 80% OFF</h2>
+                </div>
+            </div>
+            <!-- side box b -->
+            <div class="side-box box-b">
+                <div class="box-b-img"></div>
+                <div class="overlay"></div>
+                <div class="wrapper">
+                    <h1 class="bold">JUST IN</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITEM SLIDER -->
+    <div id="pager-wrapper" class="pager-wrapper">
+        <!-- Item slider -->
+        <div class="item-slider">
+            <!-- Previous/Next buttons -->
+            <img class="btn-arrow prev" src="/tommyCoco/icons tommy coco/tc-arr-L.svg" alt="">
+            <img class="btn-arrow next" src="/tommyCoco/icons tommy coco/tc-arr-R.svg" alt="">
+            <!-- Slider title -->
+            <h1 class="slider-title">JUST IN</h1>
+            <!-- Item wrapper -->
+            <div class="item-wrapper">
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/clothing.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gives 150hp</p>
+                        <h3>Clothmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                <!-- discount price -->
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/tommyCoco/images/gear.jpg" alt="">
+                    <div class="item-info">
+                        <p>Level 3 armor</p>
+                        <h3>Gearmania</h3>
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/gloves.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gauntlents for climbing a sky</p>
+                        <h3>Glovemania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/boards.jpg" alt="">
+                    <div class="item-info">
+                        <p>Manual transmission boards</p>
+                        <h3>Boardmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/tommyCoco/images/boots.jpg" alt="">
+                    <div class="item-info">
+                        <p>Designed for walking on lava</p>
+                        <h3>Bootmania</h3>
+                        <!-- discount price -->
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/glassess.jpg" alt="">
+                    <div class="item-info">
+                        <p>Bulletproof/X-RAY glassess</p>
+                        <h3>Glassmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // ITEM-SLIDER -->
+
+    <!-- Spacing / Line -->
+    <br>
+    <br>
+    <br>
+    <hr class="shorter">
+
+    <!-- 2nd ITEM SLIDER -->
+    <div class="pager-wrapper">
+        <!-- Item slider -->
+        <div class="item-slider">
+            <!-- Previous/Next buttons -->
+            <img class="btn-arrow prev-2" src="/tommyCoco/icons tommy coco/tc-arr-L.svg" alt="">
+            <img class="btn-arrow next-2" src="/tommyCoco/icons tommy coco/tc-arr-R.svg" alt="">
+            <!-- Slider title -->
+            <h1 class="slider-title">MOST POPULAR</h1>
+            <!-- Item wrapper -->
+            <div class="item-wrapper-2">
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/gear.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gives 150hp</p>
+                        <h3>Gearmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                <!-- discount price -->
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/tommyCoco/images/clothing.jpg" alt="">
+                    <div class="item-info">
+                        <p>Level 3 armor</p>
+                        <h3>Clothmania</h3>
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/boards.jpg" alt="">
+                    <div class="item-info">
+                        <p>Gauntlents for climbing a sky</p>
+                        <h3>Boardmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/gloves.jpg" alt="">
+                    <div class="item-info">
+                        <p>Manual transmission boards</p>
+                        <h3>Glovemania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="sale">SALE</span>
+                    <img class="slider-image" src="/tommyCoco/images//glassess.jpg" alt="">
+                    <div class="item-info">
+                        <p>Designed for walking on lava</p>
+                        <h3>Glassmania</h3>
+                        <!-- discount price -->
+                        <h4 class="discount">&euro;33,00</h4>
+                        <h4 class="line-through">&euro;44,00</h4>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <img class="slider-image" src="/tommyCoco/images/boots.jpg" alt="">
+                    <div class="item-info">
+                        <p>Bulletproof/X-RAY glassess</p>
+                        <h3>Bootmania</h3>
+                        <h4>&euro;33,00</h4>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- // 2nd ITEM SLIDER -->
+
+    <!-- Photo Gallery -->
+    <section>
+        <div class="gallery">
+            <h2>INSPIRATION</h2>
+            <div class="photo-gallery">
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?winter,mountain" alt="">                    
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?winter" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?mountain" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?mountain,winter" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?winter,mountain,winter" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?winter,mountain,mountain" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?winter,winter,mountain" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://source.unsplash.com/300x300/?mountain,mountain,winter" alt="">
+                    <div class="photo-overlay"></div>
+                    <img class="ig-hover" src="/tommyCoco/icons tommy coco/tc-insta-big-whitte.svg" alt="">
+                </div>
+            </div>
+            <a href="#">More on our Instagram page <img src="/tommyCoco/icons tommy coco/tc-insta-small.svg" alt=""></a>
+        </div>
+    </section>
+
+    <!-- Newsletter= -->
+    <section>
+        <div class="newsletter-container">
+            <h2>Sign up to get special offers and latest news<br> from Tommy Coco</h2>
+            <div class="submit-email">
+                <input type="email" placeholder="Your E-mail here">
+                <a class="btn-primary-lg" href="#">KEEP ME UPDATED</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="grid">
+                <div class="grid-box box-1">
+                    <ul>
+                        <li><a href="#">Collections <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Our story <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Inspiration <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Get in Touch <span class="arrow-right">></span></a></li>
+                    </ul>
+                </div>
+                <div class="grid-box box-2">
+                    <ul>
+                        <li><a href="#">Privacy policy <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Refund policy <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Shipping policy <span class="arrow-right">></span></a></li>
+                        <li><a href="#">Terms of service <span class="arrow-right">></span></a></li>
+                    </ul>
+                </div>
+                <div class="grid-box box-3">
+                    <h4>SECURE PAYMENT VIA</h4>
+                    <div class="payment-options">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-apple-pay"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- spacing / line -->
+            <br>
+            <hr>
+            <div class="company">
+                <div class="social-media">
+                    <h4>Join us on</h4>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">
+                    <h4>&copy; 2019, realVato | Powered by <a href="https://github.com/realVato" target="_blank">https://github.com/realVato</a></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

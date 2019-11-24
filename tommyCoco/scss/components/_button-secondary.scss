@@ -1,0 +1,26 @@
+// BTN-SECONDARY DEFAULT
+.btn-secondary-lg,
+.btn-secondary-md,
+.btn-secondary-sm {
+    background-color: $white;
+    color: $black;
+    border-radius: 2px;
+    box-shadow: $mild-shadow;
+}
+
+// BTN-SECONDARY PADDING
+.btn-secondary-lg { padding: 1rem 1.5rem; }
+.btn-secondary-md { padding: 0.8rem 1.3rem; }
+.btn-secondary-sm { padding: 0.5rem 0.7rem; }
+
+// BTN-SECONDARY HOVER
+.btn-secondary-lg:hover,
+.btn-secondary-md:hover,
+.btn-secondary-sm:hover {
+    background-color: $light-grey;
+    color: $black;
+    box-shadow: $mild-shadow;
+}
+
+// BTN-ZOOOM HOVER
+.btn-zoom { color: $black; }

@@ -1,0 +1,162 @@
+// overlay for all boxes
+.overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $dark-navy-blue;
+    opacity: .1;
+}
+// -----------------
+
+// Margin for buttons
+.btn-secondary-lg {
+    margin-top: 1rem;
+    z-index: 1;
+}
+// ------------------
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+    'hero-container hero-container box-a'
+    'hero-container hero-container box-b';
+}
+
+.hero-container {
+    @include flexbox-column;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    padding: 15rem 0;
+    grid-area: hero-container;
+    overflow: hidden;
+    
+    .hero-img {
+        @include absolute;
+        background: url('/tommyCoco/images/snowboarder.jpg') no-repeat center center/cover; 
+        transition: transform 1s;
+    }
+
+    .hero-wrapper {
+        text-align: center;
+        z-index: 5;
+
+        i { 
+            background-color: $white;
+            font-size: 2rem;
+            border: 3px solid $white;
+            border-radius: 30%;
+            padding: 1rem;
+        }
+    
+        h1 { color: $white; }
+        h2  { color: $white; }
+    }
+
+    .btn-scroll {
+        position: absolute;
+        text-align: center;
+        bottom: 5rem;
+        
+        
+        h4 {
+            color: $white;
+            margin-bottom: 0.5rem;
+        }
+
+        .scroll-down {
+            max-width: 60px;
+            border: 1px solid $white;
+            animation: pulse 2s ease-in-out infinite;
+        }
+    }
+
+    @include animation-pulse;
+}
+
+// all boxes within grid-container
+.hero-container:hover .overlay:before,
+.box-a:hover .overlay:before,
+.box-b:hover .overlay:before { opacity: .3; }
+
+.hero-container:hover .hero-img,
+.box-a:hover .box-a-img,
+.box-b:hover .box-b-img { transform: scale(1.1); }
+// --------------------------------------------
+
+.side-box {
+    @include flexbox-column;
+    position: relative;
+    text-align: center;
+    padding: 0 1rem;
+    overflow: hidden;
+
+    .wrapper {
+        z-index: 5;
+    }
+}
+
+.box-a {
+    grid-area: box-a;
+    
+    .box-a-img {
+        @include absolute;
+        background: url('/tommyCoco/images/snowboarder\ side-a.jpg') no-repeat center center/cover;
+        transition: transform 1s;
+    }
+
+    h1 { color: $white; }
+
+    h2 {
+        color: $white;
+        margin: 0;
+    }
+}
+
+.box-b {
+    grid-area: box-b;
+
+    .box-b-img {
+        @include absolute;
+        background: url('/tommyCoco/images/snowboarder\ side-b.jpg') no-repeat center center/cover;
+        transition: transform 1s;
+    }
+
+    h1 { color: $white; }
+}
+
+// mQuery
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        'hero-container hero-container'
+        'hero-container hero-container'
+        'box-a box-b'
+    }
+
+    .side-box {
+        padding: 15rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-gap: 0;
+        grid-template-areas:
+        'hero-container hero-container'
+        'hero-container hero-container'
+        'box-a box-a'
+        'box-b box-b'
+    }
+
+    .side-box {
+        padding: 7rem 0;
+    }
+}

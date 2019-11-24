@@ -1,0 +1,128 @@
+nav {
+
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 2.7rem;
+    }
+    
+    .logo > img {
+        width: 18rem;
+    }
+    
+    li:first-child {
+        margin-right: auto;
+    }
+}
+
+
+.responsive-nav {
+    display: flex;
+    margin-right: 2rem;
+
+    a {
+        padding: 0.7rem;
+        transition: 0.2s ease-in-out;
+    }
+
+    a:hover {
+        color: $black;
+    }
+}
+
+.nav-toggle {
+    display: none;
+
+    a > i {
+        font-size: 2.8rem;
+        color: $black;
+        margin: 1rem;
+    }
+}
+
+.extra-nav {
+    padding: 0;
+
+    li {
+        transition: 0.2s ease-in-out;
+
+        img {
+            width: 2.2rem;
+            margin: 1rem;
+        }
+    }
+
+    li:hover {
+        border-radius: 10px;
+        box-shadow: $very-mild-shadow;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        position: fixed;
+        z-index: 10;
+        background-color: $white;
+        width: 100%;
+
+        .logo > img {
+            max-width: 10rem;
+        }
+    }
+
+    .responsive-nav {
+        display: none;
+    }
+
+        .responsive-nav.openup {
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 5.5rem;
+            left: 0;
+            background: $dark-navy-blue;
+            border-top: solid 1px $red;
+            z-index: 10;
+
+            li {
+                display: block;
+                padding: 0;
+
+                .dropdown-container {
+                    display: none;
+                }
+            }
+
+            a, .active {
+                display: block;
+                color: $white;
+                padding: 2.8rem;
+                transition: 0.2s ease-in-out;
+            }
+        }
+
+        .nav-toggle {
+            display: block;
+
+            a > i {
+                font-size: 1rem;
+                margin-top: 0.8rem;
+            }
+        }
+
+        .extra-nav {
+
+            li {
+
+                img {
+                    width: 1rem;
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 400px) {
+    .extra-nav {
+        display: none;
+    }
+}

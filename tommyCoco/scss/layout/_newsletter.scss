@@ -1,0 +1,55 @@
+.newsletter-container {
+    text-align: center;
+    padding: 6rem 0;
+    
+    h2 {
+        color: $black;
+        text-transform: initial;;
+    }
+}
+
+.submit-email {
+    margin: 5rem 0;
+
+    input {
+        padding: 1rem 20rem 1rem 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $dark-grey;
+        outline: none;
+    }
+
+    input:focus {
+        border-bottom-color: $dark-navy-blue;
+    }
+
+    .btn-primary-lg {
+        margin-left: 1rem;
+        color: $white;
+    }
+}
+
+// mQuery
+@media screen and (max-width: 750px) {
+    .newsletter-container {
+        
+        h2 {
+            margin: 0 1rem;
+        }
+    }
+
+    .submit-email {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin: 0 2rem 1rem 2rem;
+            padding-right: 0;
+        }
+
+        .btn-primary-lg {
+            margin: 0 2rem;
+        }
+    }
+}

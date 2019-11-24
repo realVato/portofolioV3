@@ -1,0 +1,43 @@
+// BTN-PRIMARY DEFAULT
+.btn-primary-lg,
+.btn-primary-md,
+.btn-primary-sm {
+    background-color: $dark-navy-blue;
+    border-radius: 2px;
+    box-shadow: $very-mild-shadow;
+}
+
+// BTN-PRIMARY PADDING
+.btn-primary-lg { padding: 1rem 1.5rem; }
+.btn-primary-md { padding: 0.8rem 1.3rem; }
+.btn-primary-sm { padding: 0.5rem 0.7rem; }
+
+// BTN-PRIMARY HOVER
+.btn-primary-lg:hover,
+.btn-primary-md:hover,
+.btn-primary-sm:hover {
+    background-color: $light-navy-blue;
+    color: $dark-white;
+}
+
+// BTN-ARROW DEFAULT
+.btn-arrow {
+    max-width: 50px;
+    border-radius: 50%;
+    box-shadow: $slightly-mild-shadow;
+    z-index: 1;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+// BTN-ARROW HOVER
+.btn-arrow:hover {
+    color: $black;
+    box-shadow: $mild-shadow;
+}
+
+@media screen and (max-width: 550px) {
+    .btn-arrow {
+        max-width: 40px;
+    }
+}
