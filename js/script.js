@@ -3,7 +3,7 @@
 
 (() => {
 
-  const skills = ['HTML/CSS', 'SASS', 'JavaScript', 'Webpack', 'WordPress'];
+  const skills = ['HTML/CSS', 'SASS', 'JavaScript', 'Webpack'];
   let counter = 0;
 
   const skill = document.getElementById('skills');
