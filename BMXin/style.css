@@ -1,0 +1,177 @@
+/* body font */
+body {
+    font-family: 'Staatliches', cursive;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+/* Thick marker font for [BMX]in */
+.navbar-wrapper .brand-logo .marker-font {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Lesser marker font for BMX[in] */
+.navbar-wrapper .brand-logo {
+    font-family: 'Caveat', cursive;
+}
+
+/* Override inline-css and disable overlay for main navbar/sidebar */
+.sidenav-overlay {
+    z-index: 995;
+    opacity: 0.4 !important;
+}
+
+/* Right side on main */
+.flex-items {
+    display: flex;
+    align-items: center;
+}
+
+/* Wishlist (heart) positioning */
+.far {
+    display: flex !important;
+    align-items: center;
+    margin-right: 3px;
+}
+
+/* Video */
+.video-player {
+    overflow: hidden;
+    position: relative;
+    max-height: 730px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.video-content {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content {
+    max-width: 430px;
+    text-align: center;
+}
+ 
+/* Search */
+
+
+/* Input style */
+.section-search .input-field input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+/* BLOG*/
+.card .img-overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #131729;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+.card .card-title {
+    z-index: 15;
+}
+
+.card .card-action a {
+    text-decoration: underline;
+}
+
+/* Section icons */
+.section-icons .row {
+    background: url('img/city.jpg') no-repeat center/cover;
+}
+
+.section-icons .card-panel {
+    background-color: transparent;
+}
+
+/* Section gallery */
+.section-gallery h1 {
+    margin: 0 0 3rem 0;
+}
+
+.section-gallery .col {
+    padding: 0;
+}
+
+.section-gallery .card {
+    margin: 0;
+}
+
+/* Section contact */
+
+
+/* Footer */
+footer {
+    background: url('img/footer.jpg') no-repeat center/cover;
+    font-family: 'Staatliches', cursive;
+    
+}
+
+footer .row {
+    margin-bottom: 0;
+}
+
+footer .social-media .fab {
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.footer-copyright i {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* remove whitespace from footer bottom */
+#blog {
+    padding: 0; 
+}
+
+/* mquery */
+@media screen and (max-width: 600px) {
+   .responsive-video {
+       min-height: 530px !important; 
+       object-fit: cover !important;
+   }
+
+   .content h2 {
+       font-size: 2rem;
+       max-width: 300px;
+   }
+
+   h4 {
+       font-size: 1.5rem;
+   }
+
+   footer .copyright-name {
+       text-align: center;
+       margin-bottom: 1rem;
+   }
+
+   footer .flex {
+       flex-direction: column;
+   }
+}

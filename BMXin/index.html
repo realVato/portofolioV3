@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Google font for Logo -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker|Staatliches&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Local style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMXin</title>
+</head>
+
+<body id="home" class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav class="white z-depth-0">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <!-- Search input -->
+                    <div class="left hide-on-med-and-down">
+                        <form class="input-field">
+                            <i class="material-icons prefix black-text">search</i>
+                            <input type="text" class="nav-input black-text" placeholder="Search">
+                        </form>
+                    </div>
+                    <!-- Centered logo -->
+                    <a href="#" class="brand-logo center black-text"><span class="marker-font">BMX</span>in</a>
+                    <!-- Hamburger on smaller screen -->
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                    <!-- Account/Wishlist/Cart -->
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class="black-text flex-items"><i class="material-icons black-text">account_box</i> Account</a></li>
+                        <li><a href="#" class="black-text flex-items"><i class="far fa-heart"></i> Wishlist</a></li>
+                        <li><a href="#" class="black-text flex-items"><i class="material-icons black-text">add_shopping_cart</i> Cart</a></li>
+                    </ul>
+                    <!-- Basket on smaller screen -->
+                    <li><a href="#" class="black-text flex-items sidenav-trigger right"><i class="material-icons black-text">add_shopping_cart</i></a></li>
+                    <!-- Side Navbar -->
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="#home" class="black-text">Home</a></li>
+                        <li><a href="#search" class="black-text">Search</a></li>
+                        <li><a href="#blog" class="black-text">Blog</a></li>
+                        <li><a href="#gallery" class="black-text">Gallery</a></li>
+                        <li><a href="#contact" class="black-text">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Navbar section items -->
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="grey lighten-4 z-depth-0">
+            
+                <div class="navbar-wrapper">
+                    <ul class="brand-logo center">
+                        <li><a href="#home" class="black-text">Home</a></li>
+                        <li><a href="#search" class="black-text">Search</a></li>
+                        <li><a href="#blog" class="black-text">Blog</a></li>
+                        <li><a href="#gallery" class="black-text">Gallery</a></li>
+                        <li><a href="#contact" class="black-text">Contact</a></li>
+                    </ul>
+                </div>
+            
+        </nav>
+    </div>
+
+    <!-- Video -->
+  <section id="video" class="scrollspy">
+      <div class="video-player">
+        <video class="responsive-video" autoplay="1" preload="1" muted="1" loop="1">
+            <source src="video/bmx-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-content">
+            <div class="content">
+                <h2 class="white-text">SAVE 10% OFF EVERYTHING</h2>
+                <a class="waves-effect waves-light btn-large lime darken-4">SEE THE DEALS</a>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Search -->
+  <section id="search" class="scrollspy">
+      <div class="section section-search black center white-text">
+          <div class="container">
+              <div class="row">
+                  <div class="col s12">
+                    <h3>Search Brands</h3>
+                    <form action="">
+                        <div class="input-field">
+                            <input type="text" class="white grey-text
+                            autocomplete" id="autocomplete-input"
+                            placeholder="Cult, CHPO, WeThePeople etc. ">
+                        </div>
+                    </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Blog posts -->
+  <section id="blog" class="section scrollspy">
+          <div class="row">
+              
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-image">
+                        <div class="img-overlay"></div>
+                        <img src="img/bike1.jpg">
+                        <span class="card-title">LEARNING NEW TRICKS</span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="black-text">Read blog</a>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-image">
+                        <div class="img-overlay"></div>
+                        <img src="img/bike2.jpg">
+                        <span class="card-title">BEST CUSTOM PARTS OF 2020</span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="black-text">Read blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-image">
+                        <div class="img-overlay"></div>
+                        <img src="img/bike3.jpg">
+                        <span class="card-title">NEW CULT CREW BIKES 2020 EDITION</span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="black-text">Read blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-image">
+                        <div class="img-overlay"></div>
+                        <img src="img/bike4.jpg">
+                        <span class="card-title">HOW DIFFERENT ARE FREESTYLE AND RACING BMX BIKES</span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="black-text">Read blog</a>
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+
+  <!-- Section icons -->
+  <section class="section section-icons center">
+        <div class="row">
+            <div class="col s6 m3">
+                <div class="card-panel z-depth-0">
+                    <i class="material-icons large white-text">payment</i>
+                    <h4 class="white-text">90 days return</h4>
+                </div>
+            </div>
+        <div class="col s6 m3">
+            <div class="card-panel z-depth-0">
+                <i class="material-icons large white-text">assessment</i>
+                <h4 class="white-text">Europe's #1 BMX Shop</h4>
+            </div>
+        </div>
+        <div class="col s6 m3">
+            <div class="card-panel z-depth-0">
+                <i class="material-icons large white-text">security</i>
+                <h4 class="white-text">100% Secure Shopping</h4>
+            </div>
+        </div>
+        <div class="col s6 m3">
+            <div class="card-panel z-depth-0">
+                <i class="material-icons large white-text">star</i>
+                <h4 class="white-text">Trustpilot rate US excellent</h4>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section section-gallery scrollspy">
+      <h1 class="center">Gallery</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col s6 m3 grey lighten-3">
+                  <div class="card">
+                      <div class="card-image">
+                          <img src="img/gallery1.jpg" alt="" class="materialboxed">
+                      </div>
+                      
+                  </div>
+              </div>
+
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery2.jpg" alt="" class="materialboxed">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery3.jpg" alt="" class="materialboxed">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery4.jpg" alt="" class="materialboxed">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery5.jpg" alt="" class="materialboxed">
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery6.jpg" alt="" class="materialboxed">
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery7.jpg" alt="" class="materialboxed">
+                    </div>
+            
+                </div>
+            </div>
+            
+            <div class="col s6 m3 grey lighten-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/gallery8.jpg" alt="" class="materialboxed">
+                    </div>
+            
+                </div>
+            </div>
+
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-contact scrollspy">
+      <h2 class="center">Contact us easily!</h2>
+      <div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">textsms</i>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Textarea</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="waves-effect waves-light black btn-large"><i class="material-icons right">email</i>Send it to us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="page-footer">
+    <div class="container">
+
+            <div class="row">
+
+                <div class="col s12 m3">
+                    <h5 class="white-text">COMPANY</h5>
+                    <hr>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">CONTACT US</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">ABOUT US</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">FREE GIFTS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">WHEEL BUILDER</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">GIFTCARDS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">NEWS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BRANDS WE STOCK</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">CUSTOMER REVIEWS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">TERMS AND CONDITIONS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">PRIVACY POLICY</a></li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m3">
+                    <h5 class="white-text">CUSTOMER SERVICE</h5>
+                    <hr>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">CONTACT US</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BUYERS GUIDE</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">DELIVERY INFORMATION</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">FINANCE</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">90 DAY RETURNS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">MANAGE YOUR ACCOUNT</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">TRACK YOUR ORDERS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">CUSTOM WHEEL BUILDS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">CUSTOM BUILT BIKES</a></li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m3">
+                    <h5 class="white-text">TOP CATEGORIES</h5>
+                    <hr>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">BMX BIKES</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BMX FRAMES</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BMX WHEELS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BMX TYRES</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">BMX PARTS</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">CLOTHING</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">SHOES</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">PROTECTION</a></li>
+                    </ul>
+                </div>
+
+                <div class="col s12 m3">
+                    <h5 class="white-text">KEEP UPDATED WITH OUR LATEST VIDEOS AND CONTENT</h5>
+                    <p class="grey-text text-lighten-4">SIGN UP TO OUR EMAIL NEWSLETTER OR FOLLOW US ON OUR SOCIAL CHANNELS
+                    </p>
+                    <div class="row">
+                        <input type="email" name="" id="" placeholder="ENTER EMAIL ADDRESS">
+                        <a class="waves-effect waves-light black btn"><i class="material-icons right">email</i>announcement</a>
+                    </div>
+                    <br>
+                    <div class="row social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-vimeo-v"></i>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <hr>
+            <div class="footer-copyright">
+                <div class="container white-text flex">
+                    <div class="copyright-name">
+                        © BMXin - EU 2020
+                    </div>
+                    <div>
+                        <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-cc-amex"></i></a>
+                        <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-apple-pay"></i></a>
+                        <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-cc-mastercard"></i></a>
+                        <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-cc-visa"></i></a>
+                        <a class="grey-text text-lighten-4 right" href="#!"><i class="fab fa-cc-paypal"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2ff57d8026.js" crossorigin="anonymous"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Local script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
